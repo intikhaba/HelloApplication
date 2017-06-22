@@ -1,0 +1,9 @@
+<NUnitProject>
+  <Settings activeconfig="Release"/>
+  <Config name="Debug">
+    <assembly path="HelloApplicationTests\bin\Release\HelloApplicationTests.dll"/>
+  </Config>
+  <Config name="Release">
+    <assembly path="HelloApplicationTests\bin\Release\HelloApplicationTests.dll"/>
+  </Config>
+</NUnitProject>
