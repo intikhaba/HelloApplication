@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HelloApplication
+﻿namespace HelloApplication
 {
     public class Message
     {

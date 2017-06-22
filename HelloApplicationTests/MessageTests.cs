@@ -1,29 +1,25 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HelloApplication;
+﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Assert = NUnit.Framework.Assert;
 
 namespace HelloApplication.Tests
 {
-    [TestClass()]
+    [TestFixture]
     public class MessageTests
     {
-        [TestMethod, ExpectedException(typeof(Exception))]
+        [TestCase()]
         public void DisplayTest_WhenMessageNull()
         {
             Message msg = new Message(null);
-            msg.Display();
+            Assert.Throws<Exception>(() => msg.Display());
         }
 
 
-        [TestMethod]
+        [TestCase]
         public void DisplayTest_WhenMessageNotNull()
         {
             Message msg = new Message("hi");
-            msg.Display();
+            Assert.AreEqual("hi", msg.Display());
         }
     }
 }
