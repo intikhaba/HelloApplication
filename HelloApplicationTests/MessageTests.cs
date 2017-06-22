@@ -27,7 +27,7 @@ namespace HelloApplication.Tests
         {
             Message msg = new Message("hi");
             Assert.AreEqual("hi", msg.Display());
-        }
+        }   
 
         [TestCase]
         public void DisplayTest_WhenMessageNotNull2()
