@@ -6,6 +6,7 @@
 
         public Message(string _message)
         {
+            int i;
             this._message = _message;
         }
 
